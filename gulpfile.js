@@ -35,6 +35,7 @@ function styles() {
   return src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/@fancyapps/ui/src/Fancybox/Fancybox.js',
     'app/js/jquery.maskedinput.js',
     'app/js/main.js'
   ])
