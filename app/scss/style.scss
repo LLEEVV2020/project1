@@ -97,10 +97,10 @@ $mon: 'Montserrat';
         position: relative;
 
         &:hover {
-          color: #6a55dc;
+          //color: #6a55dc;
         }
 
-        &.active {
+        &.active, &:hover {
           font-weight: 600;
 
           &::before {
@@ -1777,6 +1777,22 @@ $mon: 'Montserrat';
   }
 }
 
+@media only screen and (min-width: 768px){
+  .header__items{
+    min-height: 58px;
+  }
+  .header__logo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media only screen and (min-width: 992px){
+  .header__items{
+    min-height: 75px;
+  }
+}
 
 .delivery {
 

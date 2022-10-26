@@ -42,4 +42,12 @@ $(document).ready(function () {
     let srcimg = $(this).attr('data-img')
     $(this).parent().parent().parent().prev().find('img').attr('src', srcimg)
   })
+
+  $('a[href^="#"]').click(function(){ 
+    let anchor = $(this).attr('href');  
+    $('html, body').animate({           
+    scrollTop:  $(anchor).offset().top  
+    }, 600);                            
+    });
+
 })
