@@ -1778,4 +1778,83 @@ $mon: 'Montserrat';
 }
 
 
+.delivery {
+
+
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 56px;
+    color: #171427;
+    margin-bottom: 13px;
+  }
+
+  &-about-descr {
+    font-family: "Hend";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    color: rgba(23, 20, 39, 0.72);
+  }
+ &-about__time{
+  font-family: 'Hind';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 32px;
+color: rgba(23, 20, 39, 0.72);
+ }
+ &-list__item{
+  font-family: 'Hind';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 40px;
+color: rgba(23, 20, 39, 0.81);
+position: relative;
+padding-right: 25px;
+ }
+
+ &-list__item::before{
+  position: absolute;
+  content: "";
+  top: 0;
+left: 0;
+  width: 36px;
+  height: 36px;
+ }
+
+&-list__phone::before{
+
+  background-image: url("../images/phone-form.svg");
+
+}
+&-list__email::before{
+
+  background-image: url("../images/email-phone.svg");
+
+
+}
+&-list__loca::before{
+
+  background-image: url("../images/location-form.svg");
+}
+
+&__options{
+  display: flex;
+}
+&__options-link{
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+line-height: 23px;
+color: #171427;
+margin-bottom: 20px;
+}
+
+}
+
 @import "media";
