@@ -97,10 +97,10 @@ $mon: 'Montserrat';
         position: relative;
 
         &:hover {
-          color: #6a55dc;
+          //color: #6a55dc;
         }
 
-        &.active {
+        &.active, &:hover {
           font-weight: 600;
 
           &::before {
