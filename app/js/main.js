@@ -50,6 +50,27 @@ $(document).ready(function () {
     }, 600);                            
   });
 
+
+  $(document).ready(function() {
+    $('.modal__form').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
+      console.log(this);
+      if (document.form.name.value == '' || document.form.phone.value == '' ) {
+        valid = false;
+        return valid;
+      }
+      $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: $(this).serialize()
+      }).done(function() {
+        //$('.js-overlay-thank-you').fadeIn();
+        $(this).find('input').val('');
+        $('.modal__form').trigger('reset');
+      });
+      return false;
+    });
+  });
+
   // Маска ввода номера телефона (плагин maskedinput)
   $(function($){
     $('[name="phone"]').mask("+7(999) 999-9999");
