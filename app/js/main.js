@@ -48,6 +48,11 @@ $(document).ready(function () {
     $('html, body').animate({           
     scrollTop:  $(anchor).offset().top  
     }, 600);                            
-    });
+  });
+
+  // Маска ввода номера телефона (плагин maskedinput)
+  $(function($){
+    $('[name="phone"]').mask("+7(999) 999-9999");
+  });
 
 })
